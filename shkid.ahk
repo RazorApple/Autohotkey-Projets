@@ -1,25 +1,24 @@
-﻿
+
 #SingleInstance Force
 SetTimer, LeftClick, 120
 SetTimer, LeftClick, Off
 suspend, on
 gui, new,
-Gui, Add, Picture, , welcome.jpg
 Gui, Add, Picture, , razor.jpg
 gui,show,autosize
 sleep 700
 gui, destroy
 gui, new,
-Gui, Add, Picture, ,sitfile.jpg
+Gui, Add, Picture, ,welcome.jpg
 gui, add, text, cGray, ==============================
 gui, add, text, vProgress cGray, Shkid is off.
 Gui, Add, Progress, vMyProgress
 gui, add, text, cGray, ---------------
 gui, add, button,gOn,    On
-gui, add, button,gSSMODE,SSmode. (i do not want so you hack on online games)
+gui, add, button,gSSMODE,Screen share mode.
 gui, add, button,  gOff,     Off
 gui, add, text, cGray, ---------------
-gui, add, button,  gLog, Log of what has been added//removed in b8.
+gui, add, button,  gLog, Log of what has been added//removed in b9.
 gui, add, text, cGray, ==============================
 gui, add, text, cGray, All rights reserved by 尺卂乙ㄖ尺卂卩卩ㄥ乇#4789 (discord)
 Gui, Add, Picture, , razor.jpg
@@ -37,7 +36,6 @@ Click
 return
 
 SSMODE:
-msgbox use at ur own risk
 winclose
 FileCreateDir, Boring Stuff
 sleep 500
@@ -121,7 +119,12 @@ gui, add, text, cRed, -=-=-=-Version build8=-=-=-
 gui, add, text, cGray, WTAp removed. Still have plans on it but may come back in b10
 gui, add, text, cGray, DevSettings removed.
 gui, add, text, cGray, File Size a little bit smaller
-gui, add, text, cRed, -=-=-=-F.A.Q=-=-=
+gui, add, text, cRed, -=-=-=-Version build9=-=-=-
+gui, add, text, cGray, Switched to Github.
+gui, add, text, cGray, New install/Uninstall script.
+gui, add, text, cGray, Everything made look cleaner.
+gui, add, text, cGray, Removed sitfile.jpg
+gui, add, text, cRed, -=-=-=-F.A.Q=-=-=-
 gui, add, text, cGray, Why are there no build  1 and 2? The builds vere private. I have them deleted... I cant find them any more.. So they are not on the FileServer  too.
 gui,show, autosize
 return
